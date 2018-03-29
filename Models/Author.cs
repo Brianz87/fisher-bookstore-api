@@ -11,6 +11,8 @@ namespace Fisher.Bookstore.Api.Models
 
         public string AuthorName { get; set; }
 
-        public string PopularWorks { get; set; }
+        public string Bio {get; set}
+
+        public List<Book> Titles { get; set;}
     }
 }
