@@ -8,3 +8,13 @@ D:\ACCTMIS3610\Workspace Folder\Fisher.Bookstore.Api\obj\Debug\netcoreapp2.0\Fis
 D:\ACCTMIS3610\Workspace Folder\Fisher.Bookstore.Api\obj\Debug\netcoreapp2.0\Fisher.Bookstore.Api.AssemblyInfo.cs
 D:\ACCTMIS3610\Workspace Folder\Fisher.Bookstore.Api\obj\Debug\netcoreapp2.0\Fisher.Bookstore.Api.dll
 D:\ACCTMIS3610\Workspace Folder\Fisher.Bookstore.Api\obj\Debug\netcoreapp2.0\Fisher.Bookstore.Api.pdb
+D:\ACCTMIS3610\Workspace_Folder\Fisher.Bookstore.Api\bin\Debug\netcoreapp2.0\Fisher.Bookstore.Api.deps.json
+D:\ACCTMIS3610\Workspace_Folder\Fisher.Bookstore.Api\bin\Debug\netcoreapp2.0\Fisher.Bookstore.Api.runtimeconfig.json
+D:\ACCTMIS3610\Workspace_Folder\Fisher.Bookstore.Api\bin\Debug\netcoreapp2.0\Fisher.Bookstore.Api.runtimeconfig.dev.json
+D:\ACCTMIS3610\Workspace_Folder\Fisher.Bookstore.Api\bin\Debug\netcoreapp2.0\Fisher.Bookstore.Api.dll
+D:\ACCTMIS3610\Workspace_Folder\Fisher.Bookstore.Api\bin\Debug\netcoreapp2.0\Fisher.Bookstore.Api.pdb
+D:\ACCTMIS3610\Workspace_Folder\Fisher.Bookstore.Api\obj\Debug\netcoreapp2.0\Fisher.Bookstore.Api.csproj.CoreCompileInputs.cache
+D:\ACCTMIS3610\Workspace_Folder\Fisher.Bookstore.Api\obj\Debug\netcoreapp2.0\Fisher.Bookstore.Api.AssemblyInfoInputs.cache
+D:\ACCTMIS3610\Workspace_Folder\Fisher.Bookstore.Api\obj\Debug\netcoreapp2.0\Fisher.Bookstore.Api.AssemblyInfo.cs
+D:\ACCTMIS3610\Workspace_Folder\Fisher.Bookstore.Api\obj\Debug\netcoreapp2.0\Fisher.Bookstore.Api.dll
+D:\ACCTMIS3610\Workspace_Folder\Fisher.Bookstore.Api\obj\Debug\netcoreapp2.0\Fisher.Bookstore.Api.pdb
