@@ -16,7 +16,7 @@ namespace Fisher.Bookstore.Api.Migrations
                     AuthorId = table.Column<int>(nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
                     AuthorName = table.Column<string>(nullable: true),
-                    PopularWorks = table.Column<string>(nullable: true)
+                    Bio = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -29,7 +29,7 @@ namespace Fisher.Bookstore.Api.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
-                    Author = table.Column<string>(nullable: true),
+                    AuthorId = table.Column<int>(nullable: true),
                     ISBN = table.Column<string>(nullable: true),
                     PublishDate = table.Column<DateTime>(nullable: false),
                     Publisher = table.Column<string>(nullable: true),
@@ -38,16 +38,27 @@ namespace Fisher.Bookstore.Api.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Books", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Books_Authors_AuthorId",
+                        column: x => x.AuthorId,
+                        principalTable: "Authors",
+                        principalColumn: "AuthorId",
+                        onDelete: ReferentialAction.Restrict);
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Books_AuthorId",
+                table: "Books",
+                column: "AuthorId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Authors");
+                name: "Books");
 
             migrationBuilder.DropTable(
-                name: "Books");
+                name: "Authors");
         }
     }
 }

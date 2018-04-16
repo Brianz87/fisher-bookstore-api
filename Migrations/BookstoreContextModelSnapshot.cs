@@ -27,7 +27,7 @@ namespace Fisher.Bookstore.Api.Migrations
 
                     b.Property<string>("AuthorName");
 
-                    b.Property<string>("PopularWorks");
+                    b.Property<string>("Bio");
 
                     b.HasKey("AuthorId");
 
@@ -39,7 +39,7 @@ namespace Fisher.Bookstore.Api.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("Author");
+                    b.Property<int?>("AuthorId");
 
                     b.Property<string>("ISBN");
 
@@ -51,7 +51,16 @@ namespace Fisher.Bookstore.Api.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("AuthorId");
+
                     b.ToTable("Books");
+                });
+
+            modelBuilder.Entity("Fisher.Bookstore.Api.Models.Book", b =>
+                {
+                    b.HasOne("Fisher.Bookstore.Api.Models.Author", "Author")
+                        .WithMany("Titles")
+                        .HasForeignKey("AuthorId");
                 });
 #pragma warning restore 612, 618
         }
